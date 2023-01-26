@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    color:#001f3f;    
+    font-family:'Roboto',sans-serif;
+}
+
+html{
+    height: 100%;
+    
+
+}
+
+header{
+    margin:auto;
+    padding-top:1em;
+    text-align: center;
+    width: 65%;
+    
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #bebebe,
+    -8px -8px 16px #ffffff;
+}
+
+header h2{
+    padding-bottom: 0.5em;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    
+}
+
+.list li{
+    
+    display: inline;
+    margin: 2em;
+}
+
+.personalInfo{
+    margin: 1.5em 25%;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  8px 8px 23px #bebebe,
+    -8px -8px 23px #ffffff;
+    
+}
+
+.personalData{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+    width:70%;
+}
+
+
+.personalData p {
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.varLeftAlign{
+    text-align:left;
+}
+
+
+
+.personalInfo img{
+    width: 11vw;
+    height: 18vh;
+    border-radius: 50px;
+}
+
+
+.schedule-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 17.5%;
+    margin-right:17.5%;
+    height: 60%;
+
+    
+    
+}
+
+.schedule{
+    width: 42vw;
+
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  8px 8px 23px #bebebe,
+                -8px -8px 16px #ffffff;
+    
+}
+
+.schedule table{
+    width:100%;
+    text-align: center;
+    height: 100%;
+    
+}
+
+.schedule td{
+    text-align:center;
+    padding-bottom: 1em;
+    padding-right:1em;
+}
+
+.schedule td button{
+    width: 100%;
+    height:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border-radius: 25px;
+    background: #ffffff;
+    border:solid 1px #ffffff;
+    padding-left: 1em;
+    
+}
+
+/*.schedule td button:hover{
+    border:solid 1px #001f3f;
+}*/
+
+.schedule td button:hover{
+    animation: change 40s linear 1;
+}
+
+.schedule td button:active{
+    animation: push 10s linear 1;
+}
+
+
+.schedule td button h4{
+    font-size:22px;
+    text-align: start;
+        
+}
+
+.schedule .time{
+    font-size: 11px;
+    text-align: start;
+}
+
+.schedule .teacher-name{
+    
+    text-align: start;
+}
+
+
+.menu{
+    width: 21vw;
+    
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #bebebe,
+                -8px -8px 23px #ffffff;
+}
+
+.menu table{
+    width: 100%;
+    height: 100%;
+}
+
+.menu table td{
+    text-align: center;
+}
+
+.menu table td button {
+    width: 100%;
+    height:100%;
+    background-color: white;
+
+    border-radius: 50px;
+    background: #ffffff;
+    border: solid 1px #001f3f;
+
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: #001f3f;
+  }
+  
+  .link-underline{
+    position: relative;
+  }
+  
+  .link-underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #001f3f;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .link-underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+}
+
+.menu a:active{
+    transform: scale(0.5);
+}
+
+
+.calendar{
+    height:100%;
+    margin:1.5em 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 17.5%;
+    margin-right:17.5%;
+    height: 80%;
+
+    padding:2em;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  8px 8px 23px #bebebe,
+                -8px -8px 23px #ffffff;
+}
+
+
+
+.bus-jikanwari{
+    width: 65%;
+    height:70%;
+    display: flex;
+    justify-content: space-between;
+    margin-left:17.5%;
+    margin-bottom: 2em;
+    
+}
+
+.bus{
+    width:35%;
+
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #bebebe,
+                -8px -8px 23px #ffffff;
+    padding-left: 1em;
+}
+
+.bus table{
+    width:95%;
+    height: 95%;
+
+    border-collapse: collapse;
+    border-style:hidden;
+    
+}
+
+.bus td, .bus th {
+    border: solid 1px #001f3f;
+}
+
+
+.jikanwari{
+    width: 60%;
+    display: flex;
+    padding-left:0.3em;
+    align-items: center;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  8px 8px 23px #bebebe,
+                -8px -8px 16px #ffffff;
+    
+
+}
+
+.jikanwari table{
+    width:98%;
+    height: 98%;
+    border-collapse: collapse;
+    border-style:hidden;
+    
+    
+}
+
+
+
+.jikanwari td, .jikanwari th {
+    border: solid 1px #001f3f;
+    text-align: center;
+}
+
+footer {
+    
+    margin:auto;
+    padding-top:1em;
+    padding-bottom:1em;
+    text-align: center;
+    width: 65%;
+    
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #bebebe,
+    -8px -8px 16px #ffffff;
+}
+
+
+
+@keyframes change {
+    0% {
+        box-shadow:  0px 0px 0px #666666,
+        0px 0px 0px #ffffff;
+    }
+
+    1%{
+        
+        box-shadow:  2px 2px 4px #666666,
+             -2px -2px 4px #ffffff;
+    }
+    100% {
+        
+        
+        box-shadow:  4px 4px 8px #666666,
+             -4px -4px 8px #ffffff;
+    }
+}
+
+@keyframes push{
+    0%{
+        box-shadow:  2px 2px 4px #666666,
+             -2px -2px 4px #ffffff;
+    }
+    1% {
+        box-shadow:  0px 0px 0px #666666,
+        0px 0px 0px #ffffff;
+    }
+    2%{
+        box-shadow: inset 2px 2px 4px #d9d9d9,
+            inset -2px -2px 4px #ffffff;
+    }
+    100%{
+        box-shadow: inset 3px 3px 5px #d9d9d9,
+            inset -3px -3px 5px #ffffff;
+    }
+}
+
+  
+

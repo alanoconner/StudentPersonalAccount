@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./register_page_styles.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <form name="rf" action = "register_scripts.php" onsubmit = "return check()" method = "POST">
+
+        <h2 class = "header">Sign in</h2>
+        <div class = "form-line">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" id= "name" name="name" required>
+            
+        </div>
+        <div class = "form-line">
+            <label for="famname"><b>Family name</b></label>
+            <input type="text" placeholder="Enter family name" id= "famname" name="famname" required>
+            
+        </div>
+        <div class = "form-line">
+            <label for="login"><b>Login</b></label>
+            <input type="text" placeholder="Login" id= "login" name="login" required>
+            
+        </div>
+        <div class = "form-line">
+            <label for="stuid"><b>Student ID</b></label>
+            <input type="text" placeholder="Student ID" id= "stuid" name="stuid" required>
+            
+        </div>
+        <div class = "form-line">
+            <label for="faculty"><b>Faculty</b></label>
+            <select name = "faculty" class = "faculty-select" id = "faculty">
+                <option><!--経営情報学科-->Information Management</option>
+                <option><!--情報ネットワーク学科-->Information Network</option>
+            </select>
+            
+        </div>
+        <div class = "form-line">
+            <label for = "year"><b>学年</b></label>
+            <select name = "year" id = "year">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            
+        </div>
+        <div class = "form-line">
+            <label for="email"><b>E-mail</b></label>
+            <input type="email" placeholder="Enter E-mail" id= "email" name="email" required>
+            
+        </div>
+        <div class = "form-line">
+            <label for="psw1"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" id= "psw1" name="psw1" required>
+            
+        </div>
+        <div  class = "form-line">
+            <label for="psw2"><b>Re-enter password</b></label>
+            <input type="password" placeholder="Password one more time" id= "psw2" name="psw2" required>
+            
+        </div>
+        <div class = "-submit-line">
+            <input type="submit" class = "submit-btn" id="submit" value="Sign in">
+        </div>
+    </form>
+</body>
+
+<script>  
+    function check()  
+    {  
+        var ps1=document.rf.psw1.value;  
+        var ps2=document.rf.psw2.value;  
+        if(ps1!=ps2) {  
+            alert("Passwords does not match!");  
+            return false;  
+        }  
+                            
+    }  
+</script> 
+</html>

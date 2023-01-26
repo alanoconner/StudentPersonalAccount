@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "./shinsei_styles.css">
+    <title>Web履修申請</title>
+</head>
+<body>
+    <form name = "shinsei" action = "shinsei_scripts.php" method ="post">
+    <div class = "table">
+        <table>
+            <tr class="th">
+                <td></td>
+                <th>月曜日</th>
+                <th>火曜日</th>
+                <th>水曜日</th>
+                <th>木曜日</th>
+                <th>金曜日</th>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="day">
+                    <div class = "checkb">
+                      <label for="m101">宗教学</label>
+                      <input type="radio" name="lesson" id="m101" value="宗教学">
+                    </div>
+                    <div class = "checkb">
+                      <label for="m102">数学</label>
+                      <input type="radio" name="lesson" id="m102" value="数学">
+                    </div>
+                    <div class = "checkb">
+                      <label for="m103">語学</label>
+                      <input type="radio" name="lesson" id="m103" value="語学">
+                    </div>
+                  </td>
+                  
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="tu101">統計学入門</label>
+                    <input type="radio" name="lesson1" id="tu101" value ="統計学入門">
+                    </div>
+                    <div class = "checkb">
+                    <label for="tu102">プログラミング</label>
+                    <input type="radio" name="lesson1" id="tu102" value = "プログラミング">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="w101">スポーツ</label>
+                    <input type="radio" name="lesson2" id="w101" value = "スポーツ">
+                    </div>
+                    <div class = "checkb">
+                    <label for="w102">国語</label>
+                    <input type="radio" name="lesson2" id="w102" value = "国語">
+                    </div>
+                    <div class = "checkb">
+                    <label for="w103">心理学</label>
+                    <input type="radio" name="lesson2" id="w103" value="心理学">
+                    </div>
+                    <div class = "checkb">
+                    <label for="w104">デザイン入門</label>
+                    <input type="radio" name="lesson2" id="w104" value="デザイン入門">
+                    </div>
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="th101">キャリア</label>
+                    <input type="radio" name="lesson3" id="th101" value="キャリア">
+                    </div>
+                    <div class = "checkb">
+                    <label for="th102">数学Ⅱ</label>
+                    <input type="radio" name="lesson3" id="th102" value="数学Ⅱ">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="f101">マーケティング</label>
+                    <input type="radio" name="lesson4" id="f101" value="マーケティング">
+                    </div>
+
+                </td>
+
+            </tr>
+            
+            <tr>
+                <tr>
+                    <td>2</td>
+                    <td class="day">
+                        <div class = "checkb">
+                        <label for="01m1l1">日本語Ⅰ</label>
+                        <input type="radio" name="lesson5" id="01m1l1" value="日本語Ⅰ">
+                        </div>
+                        <div class = "checkb">
+                        <label for="02m1l1">英語</label>
+                        <input type="radio" name="lesson5" id="02m1l1" value="英語">
+                        </div>
+    
+                    </td>
+                    <td class="day">
+                        <div class = "checkb">
+                        <label for="01m1l1">システム論</label>
+                        <input type="radio" name="lesson6" id="01m1l1" value="システム論">
+                        </div>
+                        <div class = "checkb">
+                        <label for="02m1l1">プログラミング</label>
+                        <input type="radio" name="lesson6" id="02m1l1" value="プログラミング">
+                        </div>
+                        <div class = "checkb">
+                        <label for="03m1l1">Webプログラム</label>
+                        <input type="radio" name="lesson6" id="03m1l1" value="Webプログラム">
+                        </div>
+                    </td>
+                    <td class="day">
+                        <div class = "checkb">
+                        <label for="01m1l1">ネットワーク</label>
+                        <input type="radio" name="lesson7" id="01m1l1" value="ネットワーク">
+                        </div>
+                        <div class = "checkb">
+                        <label for="02m1l1">計算機システム</label>
+                        <input type="radio" name="lesson7" id="02m1l1" value="計算機システム">
+                        </div>
+    
+                    </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">ロシア語</label>
+                    <input type="radio" name="lesson8" value = "ロシア語"id="01m1l1">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">経営戦略</label>
+                    <input type="radio" name="lesson8" value = "経営戦略" id="02m1l1">
+                    </div>
+
+                </td>
+            </td>
+            <td class="day">
+                <div class = "checkb">
+                <label for="01m1l1">宗教学</label>
+                <input type="radio" name="lesson10" value="宗教学" id="01m1l1">
+                </div>
+                <div class = "checkb">
+                <label for="02m1l1">数学</label>
+                <input type="radio" name="lesson10" value="数学" id="02m1l1">
+                </div>
+                <div class = "checkb">
+                <label for="03m1l1">語学</label>
+                <input type="radio" name="lesson10" value="語学" id="03m1l1">
+                </div>
+                <div class = "checkb">
+                <label for="03m1l1">心理学</label>
+                <input type="radio" name="lesson10" value="心理学" id="03m1l1">
+                </div>
+            </td>
+
+
+            </tr>
+
+            <tr>
+                
+                <td>3</td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">Web入門</label>
+                    <input type="radio" name="lesson11" id="01m1l1" value="Web入門">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">スイッチング</label>
+                    <input type="radio" name="lesson11" id="02m1l1" value="スイッチング">
+                    </div>
+                    <div class = "checkb">
+                    <label for="03m1l1">国語</label>
+                    <input type="radio" name="lesson11" id="03m1l1" value="国語">
+                    </div>
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">心理学</label>
+                    <input type="radio" name="lesson12" id="01m1l1" value="心理学">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">経済学入門</label>
+                    <input type="radio" name="lesson12" id="02m1l1" value = "経済学入門">
+                    </div>
+                    <div class = "checkb">
+                    <label for="03m1l1">情報学入門</label>
+                    <input type="radio" name="lesson12" id="03m1l1"  value = "情報数学入門">
+                    </div>
+                    <div class = "checkb">
+                    <label for="03m1l1">スポーツ</label>
+                    <input type="radio" name="lesson12" id="03m1l1" value = "スポーツ">
+                    </div>
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">基礎ゼミ</label>
+                    <input type="radio" name="lesson13" id="01m1l1" value = "基礎ゼミ">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">ルーティング</label>
+                    <input type="radio" name="lesson14" id="01m1l1" value = "ルーティング">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">TOEIC英語</label>
+                    <input type="radio" name="lesson14" id="02m1l1" value = "TOEIC英語">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">宗教学</label>
+                    <input type="radio" name="lesson15" id="01m1l1" value = "宗教学">
+                    </div>
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">統計学</label>
+                    <input type="radio" name="lesson16" id="01m1l1" value = "統計学">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">プログラミング</label>
+                    <input type="radio" name="lesson16" id="02m1l1" value = "プログラミング">
+                    </div>
+                    <div class = "checkb">
+                    <label for="03m1l1">ネットワーク技</label>
+                    <input type="radio" name="lesson16" id="03m1l1" value = "ネットワーク技">
+                    </div>
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">セキュリティ</label>
+                    <input type="radio" name="lesson17" id="01m1l1" value = "セキュリティ">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">情報数学</label>
+                    <input type="radio" name="lesson17" id="02m1l1" value = "情報数学">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">基礎数学</label>
+                    <input type="radio" name="lesson18" id="01m1l1" value = "基礎数学">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">中級英語</label>
+                    <input type="radio" name="lesson18" id="02m1l1" value = "中級英語">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">Webプログラム</label>
+                    <input type="radio" name="lesson19" id="01m1l1" value = "Webプログラム">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">中国語</label>
+                    <input type="radio" name="lesson20" id="01m1l1" value = "中国語">
+                    </div>
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">情報数学Ⅱ</label>
+                    <input type="radio" name="lesson21" id="01m1l1" value = "情報数学Ⅱ">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">経営論</label>
+                    <input type="radio" name="lesson21" id="02m1l1" value = "経営論">
+                    </div>
+                    <div class = "checkb">
+                    <label for="03m1l1">心理学</label>
+                    <input type="radio" name="lesson21" id="03m1l1" value = "心理学">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">経済学</label>
+                    <input type="radio" name="lesson22" id="01m1l1" value = "経済学">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">統計学</label>
+                    <input type="radio" name="lesson23" id="01m1l1" value = "統計学">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">情報学</label>
+                    <input type="radio" name="lesson23" id="02m1l1" value = "情報学">
+                    </div>
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">デザインⅡ</label>
+                    <input type="radio" name="lesson24" id="01m1l1" value = "デザインⅡ">
+                    </div>
+
+
+                </td>
+                <td class="day">
+                    <div class = "checkb">
+                    <label for="01m1l1">ロシア語</label>
+                    <input type="radio" name="lesson25" id="01m1l1" value = "ロシア語">
+                    </div>
+                    <div class = "checkb">
+                    <label for="02m1l1">語学</label>
+                    <input type="radio" name="lesson25" id="02m1l1" value = "語学">
+                    </div>
+
+                </td>
+
+            </tr>
+        </table>
+
+        <div class = "-submit-line">
+            <input type="submit" class = "kakunin-btn" id="kakunin" value="確認">
+        </div>
+    </div>
+    </form>
+
+</body>
+</html>
